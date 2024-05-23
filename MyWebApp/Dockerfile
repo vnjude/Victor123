@@ -1,4 +1,4 @@
 FROM openjdk:11
 EXPOSE 8080
-ADD target/MyWebApp.war
-ENTRYPOINT ["java","-jar","/MyWebApp.war"]
+ADD MyWebApp/target/MyWebApp.war MyWebApp.war
+ENTRYPOINT ["java","-jar","/mywebapp.war"]
